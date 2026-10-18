@@ -1,0 +1,18 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.linspace(-5, 5, 100)
+
+y = 2 * x + np.sin(x) ** 2 + 3
+
+plt.plot(x, y)
+
+plt.title("hello, po!")
+plt.xlabel("x")
+plt.ylabel("y")
+
+plt.grid(True)
+
+plt.savefig("po.pdf")
+
+plt.show()
